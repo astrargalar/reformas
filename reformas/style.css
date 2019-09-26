@@ -1,0 +1,322 @@
+/*
+Theme Name: mitema
+Theme URI: https://astrargalar.com
+Author: Paco Silva - Julio, 2019
+Author URI: https://pacosilva.com
+Description : Basic theme with the minimum functionalities to work correctly.Change the photos from the inputs and media,
+and the logos and background from the customizer.
+Tema básico con las funcionalidades mínimas para funcionar correctamente.Cambiar las fotos desde las entradas y medios,
+y los logotipos y fondo desde el personalizador.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, left-sidebar, full-width, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, theme-options, translation-ready
+Text Domain: mitema
+*/
+:root {
+	/* --primario: #aa3939; */
+	--primario: rgba(169, 3, 41, 1);
+
+	/* --secundario: #882d61; */
+	--secundario: #804515;
+
+	--gris: #f5f5f5;
+	--body_color: linear-gradient(135deg, #d6ffe0, rgba(0, 123, 255, 0.25), transparent);
+
+	--header_footer: linear-gradient(245deg, #00cad5, cyan, transparent);
+}
+
+body {
+	font-family: sans-serif;
+	color: #303030;
+	background: var(--body_color) !important;
+}
+p {
+	font-weight: 300;
+	line-height: 2rem;
+	font-size: 1rem;
+}
+.header {
+	border-bottom: 3px solid var(--primario);
+	/* background-color: var(--gris); */
+	background: var(--header_footer);
+}
+.Entry-info a {
+	color: var(--primario);
+}
+.wpcf7-form-control-wrap,
+.form-group label {
+	width: 100%;
+}
+.card-img-top {
+	height: auto;
+}
+.entrada .btn-primary {
+	color: white !important;
+}
+.bg-primary,
+.list-group-item-primary,
+.btn-primary {
+	background: var(--primario) !important;
+}
+.btn-primary {
+	border: var(--primario) !important;
+}
+.badge-secondary,
+.bg-secondary,
+.list-group-item-secondary {
+	background: #c7c57d !important;
+}
+.badge-secondary {
+	color: black;
+}
+.nav-link {
+	color: black;
+}
+.nav:hover {
+	color: var(--primario);
+}
+.current_page_item .nav-link {
+	background-color: var(--primario);
+	/* color: var(--primario); */
+	color: white;
+	border: 2px solid var(--secundario);
+}
+.bg-light {
+	background: white !important;
+}
+.separador::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100 px;
+	margin: 0 auto;
+	background-image: url(img/separador.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.inverso::after {
+	background: url(img/separador-inverso.png);
+}
+/** --Index -- **/
+.imagen > div {
+	/*-- Así selecciona solo el div del primer nivel -- **/
+	height: 30rem;
+}
+@media (min-width: 768px) {
+	.imagen > div {
+		/*-- Así selecciona solo el div del primer nivel -- **/
+		height: 30rem;
+	}
+}
+.imagen-fondo {
+	background: cover;
+	background: top center;
+}
+.imagen-superior .contenido {
+	border: 1px solid white;
+}
+.imagen-inferior .contenido {
+	border: 1px solid black;
+}
+@media (min-width: 768px) {
+	.imagen-inferior .bg-secondary {
+		order: 2;
+	}
+}
+body.home {
+	background: var(--gris);
+}
+/** Imágenes de fondo**/
+.imagen-destacada {
+	height: 24rem;
+	background: cover;
+}
+
+/** -- Nosotros -- **/
+.contenedor-principal {
+	border: 1px solid #e1e1e1;
+	position: relative;
+	z-index: 100;
+}
+.destacada {
+	margin: -5rem;
+}
+.no-destacada {
+	margin: 0 !important;
+	border: none;
+}
+.nosotros .informacion h3 {
+	font: 300;
+	font: 1.6rem;
+}
+
+/*--- Blog ---*/
+blockquote .subtitulo {
+	font: 1.6rem;
+	color: #303030;
+	font: italic;
+	font: 100;
+	border: .2 rem solid #f46669;
+}
+.entrada a {
+	color: #f46669;
+}
+.contenido-entrada .meta p {
+	font: 700;
+}
+.contenido-entrada.meta span {
+	color: #f46669;
+}
+.btn:hover {
+	background: #e65659;
+	border: #e65659;
+}
+.text-light {
+	color: white !important;
+}
+.page-link,
+.page-item a {
+	color: #f46669 !important;
+	text-decoration: none !important;
+}
+/* .page:hover {
+	background: #f46669;
+	color: white !important;
+} */
+/** -- Comentarios -- */
+.comment-respond a {
+	color: #f46669;
+}
+.comment-body {
+	background: #c7c57d;
+	padding: 1rem;
+	margin: 1rem;
+}
+.comment-body a {
+	color: black;
+}
+.comment:hover {
+	color: #dc4747;
+}
+.comment-reply-title {
+	text-align: center;
+}
+.comment-form-comment label {
+	width: 100%;
+	font: bold;
+}
+.comment-form-comment textarea {
+	width: 100%;
+	height: 8rem;
+}
+.comment-respond .submit {
+	background: #f46669;
+	color: white;
+	font: bold;
+	text-transform: uppercase;
+	border: none;
+	padding: .5rem;
+	transition: background-color .3s ease-in;
+	width: 100%;
+}
+.comment:hover {
+	background: #dc4747;
+	cursor: pointer;
+}
+#respond form > p {
+	display: flex;
+	flex: wrap;
+}
+#respond form > p label {
+	flex: 0 0 200px;
+	font: bold;
+}
+#respond form > p input {
+	flex: 1;
+}
+
+p.comment-form-cookies-consent {
+	flex: nowrap !important;
+	margin: 2rem !important;
+}
+p.comment-form-cookies-consent label {
+	flex: 1 1 700 px !important;
+	margin: 12px;
+	line-height: 1rem;
+}
+.comentarios-cerrados .alert-danger {
+	background: #f46669;
+	color: white;
+}
+/** -- Sidebar -- */
+
+aside a,
+aside a:hover {
+	color: #f5f5f5;
+}
+aside.card {
+	border: none;
+}
+aside.card-title {
+	color: black;
+	font: 1.2rem;
+	font: 700;
+}
+aside .card-subtitle {
+	color: #f46669;
+	font: 400;
+}
+aside .card-footer {
+	background: #c7c57d;
+}
+aside .card-footer a {
+	color: black;
+}
+/* footer */
+.display-4 {
+	font-size: 1.8rem;
+	line-height: 3rem;
+}
+.copyright {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+.footer {
+	border-bottom: 3px solid var(--primario);
+	border-top: 3px solid var(--primario);
+	background: var(--header_footer);
+}
+.site-logo,
+.custom-logo {
+	width: 3.5rem;
+	height: auto;
+	display: inline-block;
+	/* padding-top: .5rem; */
+}
+.site-title {
+	margin-left: 3.5rem;
+	margin-top: -3.4rem;
+}
+.site-title p {
+	/* margin-bottom: 0; */
+}
+.site-description {
+	font-size: 1.125em;
+	letter-spacing: -0.01em;
+	/* margin-top: calc (1rem / 5); */
+	/* display: inline; */
+	color: var(--primario);
+	font-weight: normal;
+	margin-left: 3.5rem;
+	margin-top: -1.5rem;
+	margin-bottom: 5px;
+}
+/* .site-description:not(:empty):before {
+	content: '⭐';
+	margin: 0.2em;
+}
+.site-description:not(:empty):after {
+	content: '⭐';
+	margin: 0.2e m;
+} */
