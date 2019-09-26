@@ -14,8 +14,7 @@ Instalación:
 =========================================================================================
 Bueno ahora solo falta empezar a crear nuestro propio tema con la certeza de que nos quedará como un tema profesional y perfectamente optimizado. Es recomendable subir el tema a github que desde VSC es sencillo y sin problemas.
 
-This is my base theme made from _s 'underscores' with sass, following the course of Jorge González Villanueva https://www.linkedin.com/learning/instructors/jorge-gonzalez-villanueva?trk=v2b_redirect_learning and adaptations made by myself.
-I think I have a robust and well built theme that can serve as the basis for any other adapting only the special characteristics of each one but with a skeleton that should not be touched.
+This is my base theme made from _s 'underscores' with sass, adapted to a construction and housing renovation company.
 I have updated the gulp and json files to eliminate vulnerabilities and I have put the tools to the latest stable versions. Practically this is the work that will have to be done each time this topic is used.
 Installation:
 1.- Install Node.js (download from https://nodejs.org/es/ and download the version of our operating system)
