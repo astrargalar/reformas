@@ -1,4 +1,4 @@
-Este es mi tema base hecho a partir de _s 'underscores' con sass,  siguiendo el curso de Jorge González Villanueva https://www.linkedin.com/learning/instructors/jorge-gonzalez-villanueva?trk=v2b_redirect_learning y adaptaciones de mi cosecha. Creo que me ha quedado un tema robusto y bien construido que puede servir de base a cualquier otro adaptando solamente las características especiales de cada uno pero con un esqueleto que no hay que tocar.
+Este es mi tema base hecho a partir de _s 'underscores' con sass, adaptado a una empresa constructora y de reformas.
 He actualizado los archivos gulp y json para eliminar vulnerabilidades y he puesto las herramientas a las últimas versiones estables. Practicamente este es el trabajo que habrá que ir haciendo cada vez que se utilice este tema.
 
 Instalación: 
