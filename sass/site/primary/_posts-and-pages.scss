@@ -1,0 +1,40 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	// margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.content-area{
+	margin: 10px 10px 0 10px;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.linea{
+	border-top: 1px solid;
+	border-color:  $color__skin;
+	padding-bottom: 10px;
+}
+
+body.listado h2{
+	margin: 5px 0;
+}
+.pagina_interna{
+	padding: 4px 10px;
+	margin: 10px 0;
+	background-color: #fff;
+	border-radius: 10px;
+}

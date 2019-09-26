@@ -1,0 +1,46 @@
+// Estilos para los artículos
+article, #comments{
+    margin: 20px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    // background: $color__fondo-listado;
+    border-radius: 8px;
+}
+body.single  article.tag-html{
+    background-color: #ced7e6;
+    }
+
+article.tag-html{
+    h3.html-content{
+    background-color: $color__skin;
+    color: #fff;
+    width: 250px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    }
+}
+ h3.importante{
+    background-color: $color__content-links;
+    color: #fff;
+    width: 250px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    }
+.bloque-metas{
+    &:after{
+        content: "|";
+        margin: 0 5px;
+    }
+}
+.contenedor-metas{
+        font-size: .8em;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 3px;
+        a{
+            text-decoration: none;
+            color: $color__content-links;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+}

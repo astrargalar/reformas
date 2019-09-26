@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__rotulos;
+}
+h1{
+	color: $color__skin;
+}
+h1.page-title.results-page.results-page {
+	margin-left: 35px;
+}
+h1 span.search-terms{
+	color: $color__skin;
+	background: yellow;
+}
+h2.comments-title, h3.comment-reply-title, p.logged-in-as, p.comment-form-comment, p.form-submit{
+	margin-left: 70px;
+}
+.site-info{
+	margin-left: 1em;
+    margin-top: 10px;
+}

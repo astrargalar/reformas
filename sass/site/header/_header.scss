@@ -1,0 +1,117 @@
+header{
+
+    .header-content{
+        display: flex;
+        color: #ffffff;
+        justify-content: space-between;
+        margin: 10px 20px 0;
+    }
+    figure{
+        max-height: 45vh;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        img{
+        width: 100vw;
+    }
+      }
+      figure.custom-logo{
+        text-align: left;
+            img{
+                max-width: 100px;
+            }
+      }
+    .header-logo{
+         display: flex;
+         flex-direction: column;
+         align-self: flex-end;
+         margin: 0 20px 5px 10px;
+        //  border: 1px solid #fff;
+            img{
+                max-width: 100px;
+            }
+        }
+  
+  
+    .site-branding{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 400px;
+        min-width: 25%;
+        h1{
+            line-height: 1.1em;
+            margin-bottom: 10px;
+        }
+    }
+        .site-description{
+            margin: 0;
+        }
+        .site-title{
+            margin: 0;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    #site-navigation{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: flex-end;
+           ul ul{
+                background-color:$color__skin;
+                padding: 5px 10px;
+            }
+            li.menu-item{
+                margin: 4px 10px;
+            }
+            li.menu-item a{
+                padding: 3px 8px;
+                border-radius: 3px;
+                color: #cccccc;
+                text-decoration: none;
+            }
+            li.menu-item a:hover{
+                 background-color: #8ab0ff;
+                color: $color__skin;
+            }
+            li.menu-item-has-children a{
+                 padding: 3px 8px;
+                 color: #cccccc;
+            }
+            li.menu-item-has-children a:hover{
+                  background-color: chocolate;
+                  color: #ffffff;
+            }
+            @media screen and ( max-width: 37.5em ){
+                margin-right: 20px;
+                margin-left: 20px;
+                align-items: initial;
+                    .menu-toggle{
+                        margin-bottom: 10px;
+                        display: block;
+                    }
+                    
+                    .header-content{
+                            text-align: center;
+                            display: block;
+                        }
+                    
+                   li.menu-item{
+                        margin:0;
+                        float: none;
+                    }
+                    li.menu-item a{
+                        padding: 4px 10px;
+                    }
+                    li.menu-item a:hover{
+                        background-color: transparent;
+                        color: #fff;
+                    }
+            }
+    }
+}
+#masthead{
+        background-color:$color__skin;
+    }

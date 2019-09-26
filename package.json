@@ -1,0 +1,37 @@
+{
+  "name": "tema_gulp",
+  "version": "1.0.0",
+  "description": "tema usado para automatizar con Gulp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jgvillanueva@gitlab.com/jgvillanueva/gulpTest.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "wordpress"
+  ],
+  "author": "Jorge González Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jgvillanueva/gulpTest/issues"
+  },
+  "homepage": "https://gitlab.com/jgvillanueva/gulpTest#README",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "jshint": "^2.10.2"
+  }
+}

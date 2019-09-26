@@ -1,0 +1,47 @@
+.widget {
+	margin: 0 0 1.5em;
+	// background-color: #E8E8E8;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+	h2{
+		border-bottom: 1px solid;
+		border-color: $color__skin;
+		padding-top: 5px;
+        padding-bottom: 5px;
+	}
+	&.widget_archive{
+		li{
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+			padding-right: 4px;
+			list-style: none;
+		}
+	}
+	&.widget_recent_entries{
+		max-height: 60px;
+		overflow: hidden;
+		transition: max-height 0.9s cubic-bezier(0, 1, 0, 1);
+		h2{
+			cursor: pointer;
+			&:after{
+				content:"+";
+				float: right;
+			}
+		}
+		&.widget-activo{
+			max-height: 4000px;
+			transition: max-height 1s ease-in-out;
+			h2{
+				cursor: pointer;
+					&:after{
+						content:"-";
+						float: right;
+				}
+			}
+		}
+	}
+}

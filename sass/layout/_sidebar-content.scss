@@ -1,0 +1,30 @@
+.content-area {
+	float: right;
+	margin: 0  (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+
+	&.sin-widget{
+		width: 100%;
+		float: none;
+		#main{
+			margin: 0;
+		}
+	}
+}
+
+.site-main {
+	margin: 0 0 0 $size__site-sidebar;
+}
+
+.site-content .widget-area {
+	float: left;
+	overflow: hidden;
+	width: $size__site-sidebar;
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}
+
+@import "no-sidebar";
