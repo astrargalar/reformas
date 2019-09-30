@@ -5,9 +5,11 @@ header{
         color: #ffffff;
         justify-content: space-between;
         margin: 10px 20px 0;
+        max-height: 70px;
+
     }
     figure{
-        max-height: 45vh;
+        max-height: 600px;//65vh;
         margin: 0;
         display: block;
         overflow: hidden;
