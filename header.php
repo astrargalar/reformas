@@ -24,13 +24,26 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mitema' ); ?></a>
 
-	
+
 	<header id="masthead" class="site-header">
-		<figure>
-		<?php the_header_image_tag(); ?>
-		</figure>
+		<?php
+					if(empty(get_header_image_tag())):
+						?>
+							<figure>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/bin/Cabecera_ConstyReformas.jpg"alt="Construcciones y Reformas"/>" 
+							</figure>
+					<?php 
+					 else : 
+						?>
+						<figure>
+							<?php the_header_image_tag(); ?>
+						</figure>
+					<?php 
+					endif;
+					?>
+
+				<hr class="orla"><!-- Borde superior del header -->
 		<div class="header-content">
-			
 				<div class="site-branding">
 					<?php
 					if ( is_front_page() && is_home() ) :
@@ -70,7 +83,10 @@
 					) );
 					?>
 				</nav><!-- #site-navigation -->
+
 		</div><!-- .header-content -->
+	<div class="orla"></div><!-- Borde inferior del header -->
 	</header><!-- #masthead -->
+
 
 	<div id="content" class="site-content">
