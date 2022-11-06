@@ -19,7 +19,7 @@
   "homepage": "https://gitlab.com/jgvillanueva/gulpTest#README",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
